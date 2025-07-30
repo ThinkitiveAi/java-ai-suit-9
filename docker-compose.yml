@@ -1,0 +1,92 @@
+version: '3.3'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: healthcare-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: healthcare_management
+      POSTGRES_USER: healthcare_user
+      POSTGRES_PASSWORD: healthcare_password
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-scripts:/docker-entrypoint-initdb.d
+    networks:
+      - healthcare-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U healthcare_user -d healthcare_management"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: healthcare-redis
+    restart: unless-stopped
+    ports:
+      - "6380:6379"
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data:/data
+    networks:
+      - healthcare-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  mailhog:
+    image: mailhog/mailhog:latest
+    container_name: healthcare-mailhog
+    restart: unless-stopped
+    ports:
+      - "1025:1025"  # SMTP server
+      - "8025:8025"  # Web UI
+    networks:
+      - healthcare-network
+
+#  healthcare-api:
+#    build: .
+#    container_name: healthcare-api
+#    restart: unless-stopped
+#    ports:
+#      - "8080:8080"
+#    environment:
+#      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/healthcare_management
+#      - SPRING_DATASOURCE_USERNAME=healthcare_user
+#      - SPRING_DATASOURCE_PASSWORD=healthcare_password
+#      - SPRING_DATA_REDIS_HOST=redis
+#      - SPRING_DATA_REDIS_PORT=6379
+#      - SPRING_MAIL_HOST=mailhog
+#      - SPRING_MAIL_PORT=1025
+#      - SPRING_MAIL_USERNAME=test@example.com
+#      - SPRING_MAIL_PASSWORD=test
+#      - RATE_LIMIT_MAX_REQUESTS=100
+#      - RATE_LIMIT_WINDOW_MS=3600000
+#      - APP_FRONTEND_URL=http://localhost:3000
+#      - APP_BACKEND_URL=http://localhost:8080
+#    depends_on:
+#      - postgres
+#      - redis
+#    networks:
+#      - healthcare-network
+#    healthcheck:
+#      test: ["CMD", "curl", "-f", "http://localhost:8080/actuator/health"]
+#      interval: 30s
+#      timeout: 10s
+#      retries: 3
+
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+
+networks:
+  healthcare-network:
+    driver: bridge 

@@ -1,0 +1,53 @@
+-------------------------------------------------------------------------------
+Test set: com.example.session_demo.service.ProviderServiceTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 0.986 s <<< FAILURE! -- in com.example.session_demo.service.ProviderServiceTest
+com.example.session_demo.service.ProviderServiceTest.registerProvider_ValidData_Success -- Time elapsed: 0.025 s <<< FAILURE!
+Argument(s) are different! Wanted:
+emailService.sendVerificationEmail(
+    <any string>,
+    <any string>,
+    <any string>
+);
+-> at com.example.session_demo.service.EmailService.sendVerificationEmail(EmailService.java:35)
+Actual invocations have different arguments at position [2]:
+emailService.sendVerificationEmail(
+    "john.doe@clinic.com",
+    "John",
+    null
+);
+-> at com.example.session_demo.service.ProviderService.registerProvider(ProviderService.java:68)
+
+	at com.example.session_demo.service.EmailService.sendVerificationEmail(EmailService.java:35)
+	at com.example.session_demo.service.ProviderServiceTest.registerProvider_ValidData_Success(ProviderServiceTest.java:109)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.example.session_demo.service.ProviderServiceTest.getProviderById_NonExistingProvider_ReturnsEmpty -- Time elapsed: 0.006 s <<< ERROR!
+org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
+
+Unnecessary stubbings detected.
+Clean & maintainable test code requires zero unnecessary code.
+Following stubbings are unnecessary (click to navigate to relevant line of code):
+  1. -> at com.example.session_demo.service.ProviderServiceTest.getProviderById_NonExistingProvider_ReturnsEmpty(ProviderServiceTest.java:209)
+Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.
+	at org.mockito.junit.jupiter.MockitoExtension.lambda$afterEach$2(MockitoExtension.java:200)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:198)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.example.session_demo.service.ProviderServiceTest.getProviderById_ExistingProvider_ReturnsProvider -- Time elapsed: 0.004 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
+	at com.example.session_demo.service.ProviderServiceTest.getProviderById_ExistingProvider_ReturnsProvider(ProviderServiceTest.java:201)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
