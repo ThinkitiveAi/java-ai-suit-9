@@ -1,0 +1,725 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------------< [0;36mcom.example:session-demo[0;1m >----------------------[m
+[[1;34mINFO[m] [1mBuilding session-demo 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mspring-boot-maven-plugin:3.5.3:run[m [1m(default-cli)[0;1m > [0;1mtest-compile[m @ [36msession-demo[0;1m >>>[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.3.1:resources[m [1m(default-resources)[m @ [36msession-demo[0;1m ---[m
+[[1;34mINFO[m] Copying 1 resource from src/main/resources to target/classes
+[[1;34mINFO[m] Copying 0 resource from src/main/resources to target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.14.0:compile[m [1m(default-compile)[m @ [36msession-demo[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.3.1:testResources[m [1m(default-testResources)[m @ [36msession-demo[0;1m ---[m
+[[1;34mINFO[m] Copying 1 resource from src/test/resources to target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.14.0:testCompile[m [1m(default-testCompile)[m @ [36msession-demo[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mspring-boot-maven-plugin:3.5.3:run[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36msession-demo[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:3.5.3:run[m [1m(default-cli)[m @ [36msession-demo[0;1m ---[m
+[[1;34mINFO[m] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.3)
+
+2025-07-24T19:13:10.735+05:30  INFO 653994 --- [session-demo] [  restartedMain] c.e.session_demo.SessionDemoApplication  : Starting SessionDemoApplication using Java 17.0.13 with PID 653994 (/home/lnv-244/CodeBase/session/java-ai-suit-9/target/classes started by lnv-244 in /home/lnv-244/CodeBase/session/java-ai-suit-9)
+2025-07-24T19:13:10.737+05:30  INFO 653994 --- [session-demo] [  restartedMain] c.e.session_demo.SessionDemoApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-07-24T19:13:10.764+05:30  INFO 653994 --- [session-demo] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-24T19:13:10.764+05:30  INFO 653994 --- [session-demo] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-24T19:13:11.214+05:30  INFO 653994 --- [session-demo] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-24T19:13:11.215+05:30  INFO 653994 --- [session-demo] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-24T19:13:11.304+05:30  INFO 653994 --- [session-demo] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 6 JPA repository interfaces.
+2025-07-24T19:13:11.318+05:30  INFO 653994 --- [session-demo] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-24T19:13:11.319+05:30  INFO 653994 --- [session-demo] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-24T19:13:11.329+05:30  INFO 653994 --- [session-demo] [  restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.session_demo.repository.LoginAttemptRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-24T19:13:11.329+05:30  INFO 653994 --- [session-demo] [  restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.session_demo.repository.PatientAuditLogRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-24T19:13:11.330+05:30  INFO 653994 --- [session-demo] [  restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.session_demo.repository.PatientRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-24T19:13:11.330+05:30  INFO 653994 --- [session-demo] [  restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.session_demo.repository.ProviderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-24T19:13:11.330+05:30  INFO 653994 --- [session-demo] [  restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.session_demo.repository.RefreshTokenRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-24T19:13:11.330+05:30  INFO 653994 --- [session-demo] [  restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.session_demo.repository.VerificationTokenRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-07-24T19:13:11.330+05:30  INFO 653994 --- [session-demo] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-07-24T19:13:11.642+05:30  INFO 653994 --- [session-demo] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-07-24T19:13:11.653+05:30  INFO 653994 --- [session-demo] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-24T19:13:11.653+05:30  INFO 653994 --- [session-demo] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-24T19:13:11.674+05:30  INFO 653994 --- [session-demo] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-24T19:13:11.675+05:30  INFO 653994 --- [session-demo] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 909 ms
+2025-07-24T19:13:11.760+05:30  INFO 653994 --- [session-demo] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-24T19:13:11.788+05:30  INFO 653994 --- [session-demo] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-24T19:13:11.807+05:30  INFO 653994 --- [session-demo] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-24T19:13:11.918+05:30  INFO 653994 --- [session-demo] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-24T19:13:11.931+05:30  INFO 653994 --- [session-demo] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-24T19:13:12.014+05:30  INFO 653994 --- [session-demo] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6be508f7
+2025-07-24T19:13:12.015+05:30  INFO 653994 --- [session-demo] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-24T19:13:12.032+05:30  WARN 653994 --- [session-demo] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-24T19:13:12.045+05:30  INFO 653994 --- [session-demo] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-24T19:13:12.928+05:30  INFO 653994 --- [session-demo] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-24T19:13:12.939+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    set client_min_messages = WARNING
+Hibernate: 
+    set client_min_messages = WARNING
+2025-07-24T19:13:12.941+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    alter table if exists login_attempts 
+       drop constraint if exists FKrauusosq6t9illwjtvtn4dxni
+Hibernate: 
+    alter table if exists login_attempts 
+       drop constraint if exists FKrauusosq6t9illwjtvtn4dxni
+2025-07-24T19:13:12.945+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    alter table if exists patient_audit_logs 
+       drop constraint if exists FKowk2molo32oxawbg409u3tfxv
+Hibernate: 
+    alter table if exists patient_audit_logs 
+       drop constraint if exists FKowk2molo32oxawbg409u3tfxv
+2025-07-24T19:13:12.949+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    alter table if exists refresh_tokens 
+       drop constraint if exists FK7euc7bblyp6m2ath08be0kbro
+Hibernate: 
+    alter table if exists refresh_tokens 
+       drop constraint if exists FK7euc7bblyp6m2ath08be0kbro
+2025-07-24T19:13:12.953+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    alter table if exists verification_tokens 
+       drop constraint if exists FKg4clt67aftoaon2c5olnkhy0q
+Hibernate: 
+    alter table if exists verification_tokens 
+       drop constraint if exists FKg4clt67aftoaon2c5olnkhy0q
+2025-07-24T19:13:12.955+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    drop table if exists login_attempts cascade
+Hibernate: 
+    drop table if exists login_attempts cascade
+2025-07-24T19:13:12.959+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    drop table if exists patient_audit_logs cascade
+Hibernate: 
+    drop table if exists patient_audit_logs cascade
+2025-07-24T19:13:12.964+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    drop table if exists patients cascade
+Hibernate: 
+    drop table if exists patients cascade
+2025-07-24T19:13:12.969+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    drop table if exists providers cascade
+Hibernate: 
+    drop table if exists providers cascade
+2025-07-24T19:13:12.975+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    drop table if exists refresh_tokens cascade
+Hibernate: 
+    drop table if exists refresh_tokens cascade
+2025-07-24T19:13:12.979+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    drop table if exists verification_tokens cascade
+Hibernate: 
+    drop table if exists verification_tokens cascade
+2025-07-24T19:13:12.989+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create table login_attempts (
+        created_at timestamp(6) not null,
+        provider_id bigint,
+        id UUID not null,
+        attempt_type varchar(255) not null check (attempt_type in ('SUCCESS','FAILED','LOCKED','RATE_LIMITED','ACCOUNT_DISABLED','EMAIL_NOT_VERIFIED')),
+        failure_reason varchar(255),
+        identifier varchar(255) not null,
+        ip_address varchar(255) not null,
+        user_agent varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table login_attempts (
+        created_at timestamp(6) not null,
+        provider_id bigint,
+        id UUID not null,
+        attempt_type varchar(255) not null check (attempt_type in ('SUCCESS','FAILED','LOCKED','RATE_LIMITED','ACCOUNT_DISABLED','EMAIL_NOT_VERIFIED')),
+        failure_reason varchar(255),
+        identifier varchar(255) not null,
+        ip_address varchar(255) not null,
+        user_agent varchar(255),
+        primary key (id)
+    )
+2025-07-24T19:13:12.999+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create table patient_audit_logs (
+        response_status integer,
+        sensitive_data_accessed boolean not null,
+        success boolean not null,
+        created_at timestamp(6) not null,
+        id bigint generated by default as identity,
+        patient_id bigint,
+        processing_time_ms bigint,
+        uuid UUID not null unique,
+        action_type varchar(255) not null check (action_type in ('PATIENT_REGISTRATION','PATIENT_LOGIN','PATIENT_LOGOUT','PATIENT_LOGIN_FAILED','PASSWORD_CHANGE','PASSWORD_RESET_REQUEST','PASSWORD_RESET_COMPLETE','ACCOUNT_ACTIVATION','ACCOUNT_DEACTIVATION','ACCOUNT_LOCKOUT','EMAIL_VERIFICATION_SENT','EMAIL_VERIFICATION_COMPLETED','PHONE_VERIFICATION_SENT','PHONE_VERIFICATION_COMPLETED','VERIFICATION_TOKEN_EXPIRED','PATIENT_DATA_VIEW','PATIENT_DATA_UPDATE','PATIENT_DATA_EXPORT','PATIENT_DATA_DELETE','MEDICAL_HISTORY_VIEW','MEDICAL_HISTORY_UPDATE','INSURANCE_INFO_VIEW','INSURANCE_INFO_UPDATE','PRIVACY_CONSENT_GIVEN','PRIVACY_CONSENT_WITHDRAWN','TERMS_ACCEPTED','MARKETING_CONSENT_CHANGED','EMAIL_SENT','SMS_SENT','COMMUNICATION_PREFERENCES_UPDATED','SUSPICIOUS_ACTIVITY_DETECTED','RATE_LIMIT_EXCEEDED','UNAUTHORIZED_ACCESS_ATTEMPT','DATA_ENCRYPTION_PERFORMED','DATA_DECRYPTION_PERFORMED','SYSTEM_BACKUP','SYSTEM_RESTORE','DATABASE_MIGRATION','AUDIT_LOG_CLEANUP')),
+        actor_id varchar(255),
+        actor_type varchar(255),
+        failure_reason varchar(255),
+        ip_address varchar(255),
+        request_method varchar(255),
+        request_uri varchar(255),
+        session_id varchar(255),
+        user_agent TEXT,
+        action_details_encrypted TEXT,
+        primary key (id)
+    )
+Hibernate: 
+    create table patient_audit_logs (
+        response_status integer,
+        sensitive_data_accessed boolean not null,
+        success boolean not null,
+        created_at timestamp(6) not null,
+        id bigint generated by default as identity,
+        patient_id bigint,
+        processing_time_ms bigint,
+        uuid UUID not null unique,
+        action_type varchar(255) not null check (action_type in ('PATIENT_REGISTRATION','PATIENT_LOGIN','PATIENT_LOGOUT','PATIENT_LOGIN_FAILED','PASSWORD_CHANGE','PASSWORD_RESET_REQUEST','PASSWORD_RESET_COMPLETE','ACCOUNT_ACTIVATION','ACCOUNT_DEACTIVATION','ACCOUNT_LOCKOUT','EMAIL_VERIFICATION_SENT','EMAIL_VERIFICATION_COMPLETED','PHONE_VERIFICATION_SENT','PHONE_VERIFICATION_COMPLETED','VERIFICATION_TOKEN_EXPIRED','PATIENT_DATA_VIEW','PATIENT_DATA_UPDATE','PATIENT_DATA_EXPORT','PATIENT_DATA_DELETE','MEDICAL_HISTORY_VIEW','MEDICAL_HISTORY_UPDATE','INSURANCE_INFO_VIEW','INSURANCE_INFO_UPDATE','PRIVACY_CONSENT_GIVEN','PRIVACY_CONSENT_WITHDRAWN','TERMS_ACCEPTED','MARKETING_CONSENT_CHANGED','EMAIL_SENT','SMS_SENT','COMMUNICATION_PREFERENCES_UPDATED','SUSPICIOUS_ACTIVITY_DETECTED','RATE_LIMIT_EXCEEDED','UNAUTHORIZED_ACCESS_ATTEMPT','DATA_ENCRYPTION_PERFORMED','DATA_DECRYPTION_PERFORMED','SYSTEM_BACKUP','SYSTEM_RESTORE','DATABASE_MIGRATION','AUDIT_LOG_CLEANUP')),
+        actor_id varchar(255),
+        actor_type varchar(255),
+        failure_reason varchar(255),
+        ip_address varchar(255),
+        request_method varchar(255),
+        request_uri varchar(255),
+        session_id varchar(255),
+        user_agent TEXT,
+        action_details_encrypted TEXT,
+        primary key (id)
+    )
+2025-07-24T19:13:13.011+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create table patients (
+        appointment_reminders boolean not null,
+        date_of_birth date not null,
+        email_notifications boolean not null,
+        email_verified boolean not null,
+        failed_login_attempts integer not null,
+        insurance_effective_date date,
+        insurance_expiry_date date,
+        is_active boolean not null,
+        login_count integer not null,
+        marketing_emails boolean not null,
+        phone_verified boolean not null,
+        privacy_consent boolean not null,
+        sms_notifications boolean not null,
+        terms_accepted boolean not null,
+        consent_date timestamp(6),
+        created_at timestamp(6) not null,
+        id bigint generated by default as identity,
+        last_login timestamp(6),
+        locked_until timestamp(6),
+        password_changed_at timestamp(6),
+        updated_at timestamp(6) not null,
+        preferred_language varchar(10),
+        uuid UUID not null unique,
+        first_name varchar(50) not null,
+        last_name varchar(50) not null,
+        address_city varchar(255),
+        address_country varchar(255),
+        address_state varchar(255),
+        address_street varchar(255),
+        address_zip varchar(255),
+        email varchar(255) not null unique,
+        emergency_contact_email varchar(255),
+        emergency_contact_name varchar(255),
+        emergency_contact_phone varchar(255),
+        emergency_contact_relationship varchar(255),
+        gender varchar(255) not null check (gender in ('MALE','FEMALE','OTHER','PREFER_NOT_TO_SAY')),
+        insurance_group_number varchar(255),
+        insurance_member_id_encrypted varchar(255),
+        insurance_policy_number_encrypted varchar(255),
+        insurance_provider varchar(255),
+        password_hash varchar(255) not null,
+        phone_number varchar(255) not null unique,
+        allergies_encrypted TEXT,
+        current_medications_encrypted TEXT,
+        medical_history_encrypted TEXT,
+        primary key (id)
+    )
+Hibernate: 
+    create table patients (
+        appointment_reminders boolean not null,
+        date_of_birth date not null,
+        email_notifications boolean not null,
+        email_verified boolean not null,
+        failed_login_attempts integer not null,
+        insurance_effective_date date,
+        insurance_expiry_date date,
+        is_active boolean not null,
+        login_count integer not null,
+        marketing_emails boolean not null,
+        phone_verified boolean not null,
+        privacy_consent boolean not null,
+        sms_notifications boolean not null,
+        terms_accepted boolean not null,
+        consent_date timestamp(6),
+        created_at timestamp(6) not null,
+        id bigint generated by default as identity,
+        last_login timestamp(6),
+        locked_until timestamp(6),
+        password_changed_at timestamp(6),
+        updated_at timestamp(6) not null,
+        preferred_language varchar(10),
+        uuid UUID not null unique,
+        first_name varchar(50) not null,
+        last_name varchar(50) not null,
+        address_city varchar(255),
+        address_country varchar(255),
+        address_state varchar(255),
+        address_street varchar(255),
+        address_zip varchar(255),
+        email varchar(255) not null unique,
+        emergency_contact_email varchar(255),
+        emergency_contact_name varchar(255),
+        emergency_contact_phone varchar(255),
+        emergency_contact_relationship varchar(255),
+        gender varchar(255) not null check (gender in ('MALE','FEMALE','OTHER','PREFER_NOT_TO_SAY')),
+        insurance_group_number varchar(255),
+        insurance_member_id_encrypted varchar(255),
+        insurance_policy_number_encrypted varchar(255),
+        insurance_provider varchar(255),
+        password_hash varchar(255) not null,
+        phone_number varchar(255) not null unique,
+        allergies_encrypted TEXT,
+        current_medications_encrypted TEXT,
+        medical_history_encrypted TEXT,
+        primary key (id)
+    )
+2025-07-24T19:13:13.026+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create table providers (
+        concurrent_sessions integer not null,
+        email_verified boolean not null,
+        failed_login_attempts integer not null,
+        is_active boolean not null,
+        login_count integer not null,
+        years_of_experience integer not null check ((years_of_experience<=50) and (years_of_experience>=0)),
+        created_at timestamp(6) not null,
+        email_verification_token_expiry timestamp(6),
+        id bigint generated by default as identity,
+        last_login timestamp(6),
+        locked_until timestamp(6),
+        password_changed_at timestamp(6),
+        updated_at timestamp(6) not null,
+        uuid UUID not null unique,
+        first_name varchar(50) not null,
+        last_name varchar(50) not null,
+        clinic_city varchar(255),
+        clinic_state varchar(255),
+        clinic_street varchar(255),
+        clinic_zip varchar(255),
+        email varchar(255) not null unique,
+        email_verification_token varchar(255),
+        license_document_url varchar(255),
+        license_number varchar(255) not null unique,
+        password_hash varchar(255) not null,
+        phone_number varchar(255) not null unique,
+        specialization varchar(255) not null check (specialization in ('ALLERGY_IMMUNOLOGY','ANESTHESIOLOGY','CARDIOLOGY','DERMATOLOGY','EMERGENCY_MEDICINE','FAMILY_MEDICINE','GASTROENTEROLOGY','GENERAL_SURGERY','HEMATOLOGY','INFECTIOUS_DISEASE','INTERNAL_MEDICINE','NEPHROLOGY','NEUROLOGY','NEUROSURGERY','OBSTETRICS_GYNECOLOGY','ONCOLOGY','OPHTHALMOLOGY','ORTHOPEDIC_SURGERY','OTOLARYNGOLOGY','PATHOLOGY','PEDIATRICS','PHYSICAL_MEDICINE','PLASTIC_SURGERY','PSYCHIATRY','PULMONOLOGY','RADIOLOGY','RHEUMATOLOGY','UROLOGY','NURSE_PRACTITIONER','PHYSICIAN_ASSISTANT','OTHER')),
+        verification_status varchar(255) not null check (verification_status in ('PENDING','VERIFIED','REJECTED')),
+        primary key (id)
+    )
+Hibernate: 
+    create table providers (
+        concurrent_sessions integer not null,
+        email_verified boolean not null,
+        failed_login_attempts integer not null,
+        is_active boolean not null,
+        login_count integer not null,
+        years_of_experience integer not null check ((years_of_experience<=50) and (years_of_experience>=0)),
+        created_at timestamp(6) not null,
+        email_verification_token_expiry timestamp(6),
+        id bigint generated by default as identity,
+        last_login timestamp(6),
+        locked_until timestamp(6),
+        password_changed_at timestamp(6),
+        updated_at timestamp(6) not null,
+        uuid UUID not null unique,
+        first_name varchar(50) not null,
+        last_name varchar(50) not null,
+        clinic_city varchar(255),
+        clinic_state varchar(255),
+        clinic_street varchar(255),
+        clinic_zip varchar(255),
+        email varchar(255) not null unique,
+        email_verification_token varchar(255),
+        license_document_url varchar(255),
+        license_number varchar(255) not null unique,
+        password_hash varchar(255) not null,
+        phone_number varchar(255) not null unique,
+        specialization varchar(255) not null check (specialization in ('ALLERGY_IMMUNOLOGY','ANESTHESIOLOGY','CARDIOLOGY','DERMATOLOGY','EMERGENCY_MEDICINE','FAMILY_MEDICINE','GASTROENTEROLOGY','GENERAL_SURGERY','HEMATOLOGY','INFECTIOUS_DISEASE','INTERNAL_MEDICINE','NEPHROLOGY','NEUROLOGY','NEUROSURGERY','OBSTETRICS_GYNECOLOGY','ONCOLOGY','OPHTHALMOLOGY','ORTHOPEDIC_SURGERY','OTOLARYNGOLOGY','PATHOLOGY','PEDIATRICS','PHYSICAL_MEDICINE','PLASTIC_SURGERY','PSYCHIATRY','PULMONOLOGY','RADIOLOGY','RHEUMATOLOGY','UROLOGY','NURSE_PRACTITIONER','PHYSICIAN_ASSISTANT','OTHER')),
+        verification_status varchar(255) not null check (verification_status in ('PENDING','VERIFIED','REJECTED')),
+        primary key (id)
+    )
+2025-07-24T19:13:13.041+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create table refresh_tokens (
+        is_revoked boolean not null,
+        created_at timestamp(6) not null,
+        expires_at timestamp(6) not null,
+        last_used_at timestamp(6) not null,
+        provider_id bigint not null,
+        id UUID not null,
+        device_info varchar(255),
+        ip_address varchar(255),
+        token_hash varchar(255) not null unique,
+        user_agent varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table refresh_tokens (
+        is_revoked boolean not null,
+        created_at timestamp(6) not null,
+        expires_at timestamp(6) not null,
+        last_used_at timestamp(6) not null,
+        provider_id bigint not null,
+        id UUID not null,
+        device_info varchar(255),
+        ip_address varchar(255),
+        token_hash varchar(255) not null unique,
+        user_agent varchar(255),
+        primary key (id)
+    )
+2025-07-24T19:13:13.049+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create table verification_tokens (
+        attempts integer not null check (attempts>=0),
+        is_used boolean not null,
+        max_attempts integer not null check ((max_attempts>=1) and (max_attempts<=10)),
+        created_at timestamp(6) not null,
+        expires_at timestamp(6) not null,
+        id bigint generated by default as identity,
+        patient_id bigint not null,
+        used_at timestamp(6),
+        uuid UUID not null unique,
+        ip_address varchar(255),
+        token_hash varchar(255) not null,
+        token_type varchar(255) not null check (token_type in ('EMAIL_VERIFICATION','PHONE_VERIFICATION','PASSWORD_RESET','ACCOUNT_ACTIVATION')),
+        token_value_encrypted varchar(255),
+        user_agent varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table verification_tokens (
+        attempts integer not null check (attempts>=0),
+        is_used boolean not null,
+        max_attempts integer not null check ((max_attempts>=1) and (max_attempts<=10)),
+        created_at timestamp(6) not null,
+        expires_at timestamp(6) not null,
+        id bigint generated by default as identity,
+        patient_id bigint not null,
+        used_at timestamp(6),
+        uuid UUID not null unique,
+        ip_address varchar(255),
+        token_hash varchar(255) not null,
+        token_type varchar(255) not null check (token_type in ('EMAIL_VERIFICATION','PHONE_VERIFICATION','PASSWORD_RESET','ACCOUNT_ACTIVATION')),
+        token_value_encrypted varchar(255),
+        user_agent varchar(255),
+        primary key (id)
+    )
+2025-07-24T19:13:13.057+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_login_attempt_provider 
+       on login_attempts (provider_id)
+Hibernate: 
+    create index idx_login_attempt_provider 
+       on login_attempts (provider_id)
+2025-07-24T19:13:13.060+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_login_attempt_identifier 
+       on login_attempts (identifier)
+Hibernate: 
+    create index idx_login_attempt_identifier 
+       on login_attempts (identifier)
+2025-07-24T19:13:13.063+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_login_attempt_ip 
+       on login_attempts (ip_address)
+Hibernate: 
+    create index idx_login_attempt_ip 
+       on login_attempts (ip_address)
+2025-07-24T19:13:13.067+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_login_attempt_created 
+       on login_attempts (created_at)
+Hibernate: 
+    create index idx_login_attempt_created 
+       on login_attempts (created_at)
+2025-07-24T19:13:13.070+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_login_attempt_type 
+       on login_attempts (attempt_type)
+Hibernate: 
+    create index idx_login_attempt_type 
+       on login_attempts (attempt_type)
+2025-07-24T19:13:13.073+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_audit_patient 
+       on patient_audit_logs (patient_id)
+Hibernate: 
+    create index idx_audit_patient 
+       on patient_audit_logs (patient_id)
+2025-07-24T19:13:13.076+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_audit_action 
+       on patient_audit_logs (action_type)
+Hibernate: 
+    create index idx_audit_action 
+       on patient_audit_logs (action_type)
+2025-07-24T19:13:13.079+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_audit_created 
+       on patient_audit_logs (created_at)
+Hibernate: 
+    create index idx_audit_created 
+       on patient_audit_logs (created_at)
+2025-07-24T19:13:13.083+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_audit_sensitive 
+       on patient_audit_logs (sensitive_data_accessed)
+Hibernate: 
+    create index idx_audit_sensitive 
+       on patient_audit_logs (sensitive_data_accessed)
+2025-07-24T19:13:13.089+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_audit_success 
+       on patient_audit_logs (success)
+Hibernate: 
+    create index idx_audit_success 
+       on patient_audit_logs (success)
+2025-07-24T19:13:13.093+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_audit_ip 
+       on patient_audit_logs (ip_address)
+Hibernate: 
+    create index idx_audit_ip 
+       on patient_audit_logs (ip_address)
+2025-07-24T19:13:13.099+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_patient_email 
+       on patients (email)
+Hibernate: 
+    create index idx_patient_email 
+       on patients (email)
+2025-07-24T19:13:13.105+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_patient_phone 
+       on patients (phone_number)
+Hibernate: 
+    create index idx_patient_phone 
+       on patients (phone_number)
+2025-07-24T19:13:13.109+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_patient_active 
+       on patients (is_active)
+Hibernate: 
+    create index idx_patient_active 
+       on patients (is_active)
+2025-07-24T19:13:13.113+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_patient_verified 
+       on patients (email_verified, phone_verified)
+Hibernate: 
+    create index idx_patient_verified 
+       on patients (email_verified, phone_verified)
+2025-07-24T19:13:13.118+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_patient_created 
+       on patients (created_at)
+Hibernate: 
+    create index idx_patient_created 
+       on patients (created_at)
+2025-07-24T19:13:13.122+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_patient_dob 
+       on patients (date_of_birth)
+Hibernate: 
+    create index idx_patient_dob 
+       on patients (date_of_birth)
+2025-07-24T19:13:13.125+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_provider_email 
+       on providers (email)
+Hibernate: 
+    create index idx_provider_email 
+       on providers (email)
+2025-07-24T19:13:13.128+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_provider_phone 
+       on providers (phone_number)
+Hibernate: 
+    create index idx_provider_phone 
+       on providers (phone_number)
+2025-07-24T19:13:13.133+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_provider_license 
+       on providers (license_number)
+Hibernate: 
+    create index idx_provider_license 
+       on providers (license_number)
+2025-07-24T19:13:13.138+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_refresh_token_provider 
+       on refresh_tokens (provider_id)
+Hibernate: 
+    create index idx_refresh_token_provider 
+       on refresh_tokens (provider_id)
+2025-07-24T19:13:13.141+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_refresh_token_hash 
+       on refresh_tokens (token_hash)
+Hibernate: 
+    create index idx_refresh_token_hash 
+       on refresh_tokens (token_hash)
+2025-07-24T19:13:13.144+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_refresh_token_expires 
+       on refresh_tokens (expires_at)
+Hibernate: 
+    create index idx_refresh_token_expires 
+       on refresh_tokens (expires_at)
+2025-07-24T19:13:13.148+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_verification_patient 
+       on verification_tokens (patient_id)
+Hibernate: 
+    create index idx_verification_patient 
+       on verification_tokens (patient_id)
+2025-07-24T19:13:13.152+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_verification_type 
+       on verification_tokens (token_type)
+Hibernate: 
+    create index idx_verification_type 
+       on verification_tokens (token_type)
+2025-07-24T19:13:13.156+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_verification_expires 
+       on verification_tokens (expires_at)
+Hibernate: 
+    create index idx_verification_expires 
+       on verification_tokens (expires_at)
+2025-07-24T19:13:13.159+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_verification_used 
+       on verification_tokens (is_used)
+Hibernate: 
+    create index idx_verification_used 
+       on verification_tokens (is_used)
+2025-07-24T19:13:13.163+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    create index idx_verification_active 
+       on verification_tokens (is_used, expires_at)
+Hibernate: 
+    create index idx_verification_active 
+       on verification_tokens (is_used, expires_at)
+2025-07-24T19:13:13.168+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    alter table if exists login_attempts 
+       add constraint FKrauusosq6t9illwjtvtn4dxni 
+       foreign key (provider_id) 
+       references providers
+Hibernate: 
+    alter table if exists login_attempts 
+       add constraint FKrauusosq6t9illwjtvtn4dxni 
+       foreign key (provider_id) 
+       references providers
+2025-07-24T19:13:13.172+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    alter table if exists patient_audit_logs 
+       add constraint FKowk2molo32oxawbg409u3tfxv 
+       foreign key (patient_id) 
+       references patients
+Hibernate: 
+    alter table if exists patient_audit_logs 
+       add constraint FKowk2molo32oxawbg409u3tfxv 
+       foreign key (patient_id) 
+       references patients
+2025-07-24T19:13:13.176+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    alter table if exists refresh_tokens 
+       add constraint FK7euc7bblyp6m2ath08be0kbro 
+       foreign key (provider_id) 
+       references providers
+Hibernate: 
+    alter table if exists refresh_tokens 
+       add constraint FK7euc7bblyp6m2ath08be0kbro 
+       foreign key (provider_id) 
+       references providers
+2025-07-24T19:13:13.179+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    alter table if exists verification_tokens 
+       add constraint FKg4clt67aftoaon2c5olnkhy0q 
+       foreign key (patient_id) 
+       references patients
+Hibernate: 
+    alter table if exists verification_tokens 
+       add constraint FKg4clt67aftoaon2c5olnkhy0q 
+       foreign key (patient_id) 
+       references patients
+2025-07-24T19:13:13.188+05:30  INFO 653994 --- [session-demo] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-24T19:13:13.477+05:30  INFO 653994 --- [session-demo] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-24T19:13:14.934+05:30  WARN 653994 --- [session-demo] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-24T19:13:15.052+05:30  WARN 653994 --- [session-demo] [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c478d3ae-ea71-4baa-acc1-fe66736b4fdc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-07-24T19:13:15.057+05:30  INFO 653994 --- [session-demo] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-07-24T19:13:15.339+05:30  WARN 653994 --- [session-demo] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-07-24T19:13:15.469+05:30  WARN 653994 --- [session-demo] [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-07-24T19:13:15.482+05:30  INFO 653994 --- [session-demo] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-24T19:13:15.483+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    set client_min_messages = WARNING
+Hibernate: 
+    set client_min_messages = WARNING
+2025-07-24T19:13:15.484+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    alter table if exists login_attempts 
+       drop constraint if exists FKrauusosq6t9illwjtvtn4dxni
+Hibernate: 
+    alter table if exists login_attempts 
+       drop constraint if exists FKrauusosq6t9illwjtvtn4dxni
+2025-07-24T19:13:15.488+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    alter table if exists patient_audit_logs 
+       drop constraint if exists FKowk2molo32oxawbg409u3tfxv
+Hibernate: 
+    alter table if exists patient_audit_logs 
+       drop constraint if exists FKowk2molo32oxawbg409u3tfxv
+2025-07-24T19:13:15.490+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    alter table if exists refresh_tokens 
+       drop constraint if exists FK7euc7bblyp6m2ath08be0kbro
+Hibernate: 
+    alter table if exists refresh_tokens 
+       drop constraint if exists FK7euc7bblyp6m2ath08be0kbro
+2025-07-24T19:13:15.492+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    alter table if exists verification_tokens 
+       drop constraint if exists FKg4clt67aftoaon2c5olnkhy0q
+Hibernate: 
+    alter table if exists verification_tokens 
+       drop constraint if exists FKg4clt67aftoaon2c5olnkhy0q
+2025-07-24T19:13:15.497+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    drop table if exists login_attempts cascade
+Hibernate: 
+    drop table if exists login_attempts cascade
+2025-07-24T19:13:15.501+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    drop table if exists patient_audit_logs cascade
+Hibernate: 
+    drop table if exists patient_audit_logs cascade
+2025-07-24T19:13:15.507+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    drop table if exists patients cascade
+Hibernate: 
+    drop table if exists patients cascade
+2025-07-24T19:13:15.513+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    drop table if exists providers cascade
+Hibernate: 
+    drop table if exists providers cascade
+2025-07-24T19:13:15.519+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    drop table if exists refresh_tokens cascade
+Hibernate: 
+    drop table if exists refresh_tokens cascade
+2025-07-24T19:13:15.522+05:30 DEBUG 653994 --- [session-demo] [  restartedMain] org.hibernate.SQL                        : 
+    drop table if exists verification_tokens cascade
+Hibernate: 
+    drop table if exists verification_tokens cascade
+2025-07-24T19:13:15.532+05:30  INFO 653994 --- [session-demo] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-24T19:13:15.538+05:30  INFO 653994 --- [session-demo] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-24T19:13:15.554+05:30  INFO 653994 --- [session-demo] [  restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-07-24T19:13:15.569+05:30 ERROR 653994 --- [session-demo] [  restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  6.625 s
+[[1;34mINFO[m] Finished at: 2025-07-24T19:13:15+05:30
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.springframework.boot:spring-boot-maven-plugin:3.5.3:run[m [1m(default-cli)[m on project [36msession-demo[m: [1;31mProcess terminated with exit code: 1[m -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

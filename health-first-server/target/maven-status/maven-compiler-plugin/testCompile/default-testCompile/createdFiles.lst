@@ -1,0 +1,5 @@
+com/example/session_demo/service/EnhancedAuthServiceTest.class
+com/example/session_demo/SessionDemoApplicationTests.class
+com/example/session_demo/controller/EnhancedAuthControllerIntegrationTest.class
+com/example/session_demo/controller/ProviderControllerIntegrationTest.class
+com/example/session_demo/util/PasswordUtilTest.class

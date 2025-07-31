@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.example.session_demo.service.EnhancedAuthServiceTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.219 s <<< FAILURE! -- in com.example.session_demo.service.EnhancedAuthServiceTest
+com.example.session_demo.service.EnhancedAuthServiceTest.testSuccessfulTokenRefresh -- Time elapsed: 0.007 s <<< ERROR!
+com.example.session_demo.service.EnhancedAuthService$AuthenticationException: Token refresh failed
+	at com.example.session_demo.service.EnhancedAuthService.refreshToken(EnhancedAuthService.java:210)
+	at com.example.session_demo.service.EnhancedAuthServiceTest.testSuccessfulTokenRefresh(EnhancedAuthServiceTest.java:247)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
